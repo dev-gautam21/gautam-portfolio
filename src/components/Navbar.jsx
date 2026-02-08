@@ -1,57 +1,41 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
-    setIsOpen(false);
-  };
-
   return (
-    <nav className="navbar">
-      <div className="navbar-container">
-        <div className="navbar-logo">
-          <h1>Gautam Sharma</h1>
-        </div>
-        
-        <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-          ☰
+    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+      <div className="container">
+        <Link className="navbar-brand fw-bold text-primary" to="/">
+          GS Portfolio
+        </Link>
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav"
+        >
+          <span className="navbar-toggler-icon"></span>
         </button>
-
-        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('hero')} className="nav-link">
-              Home
-            </button>
-          </li>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('about')} className="nav-link">
-              About
-            </button>
-          </li>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('skills')} className="nav-link">
-              Skills
-            </button>
-          </li>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('projects')} className="nav-link">
-              Projects
-            </button>
-          </li>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('achievements')} className="nav-link">
-              Achievements
-            </button>
-          </li>
-          <li className="nav-item">
-            <button onClick={() => scrollToSection('contact')} className="nav-link">
-              Contact
-            </button>
-          </li>
-        </ul>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => isActive ? "nav-link active fw-bold text-primary" : "nav-link"}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink 
+                to="/projects" 
+                className={({ isActive }) => isActive ? "nav-link active fw-bold text-primary" : "nav-link"}
+              >
+                Projects
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );

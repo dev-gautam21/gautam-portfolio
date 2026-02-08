@@ -1,18 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import Footer from './components/Footer';
-import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <HeroSection />
-      <Home />
-      <Footer />
-    </div>
+    <Router>
+      <div className="d-flex flex-column min-vh-100">
+        <Navbar />
+        <main className="flex-grow-1">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

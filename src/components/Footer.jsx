@@ -2,40 +2,17 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="footer" id="contact">
-      <div className="footer-container">
-        <div className="footer-content">
-          <h3>Get In Touch</h3>
-          <p>Feel free to reach out via email or connect with me on LinkedIn and GitHub.</p>
-          
-          <div className="social-links">
-            <a href="mailto:gaut21am@gmail.com" className="social-link" title="Email">
-              📧 Email
-            </a>
-            <a href="tel:+918146047816" className="social-link" title="Phone">
-              📱 Phone
-            </a>
-            <a href="https://linkedin.com/in/gautam-sharma-ai" className="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
-              💼 LinkedIn
-            </a>
-            <a href="https://github.com/dev-gautam21" className="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
-              🐙 GitHub
-            </a>
-          </div>
-
-          <div className="footer-certifications">
-            <h4>Certifications</h4>
-            <ul>
-              <li>Microsoft Azure AI Fundamentals</li>
-              <li>Introduction to Machine Learning from Duke University</li>
-              <li>Structured Query Language from the University of Colorado Boulder</li>
-            </ul>
-          </div>
+    <footer className="bg-white py-4 mt-auto border-top">
+      <div className="container text-center">
+        <h5 className="mb-3">Gautam Sharma</h5>
+        <div className="mb-3">
+          <a href="mailto:gaut21am@gmail.com" className="text-decoration-none text-secondary mx-2">Email</a>
+          <span className="text-muted">|</span>
+          <a href="https://linkedin.com/in/gautam-sharma-ai" className="text-decoration-none text-secondary mx-2">LinkedIn</a>
+          <span className="text-muted">|</span>
+          <a href="https://github.com/dev-gautam21" className="text-decoration-none text-secondary mx-2">GitHub</a>
         </div>
-
-        <div className="footer-bottom">
-          <p>&copy; 2026 Gautam Sharma. All rights reserved.</p>
-        </div>
+        <p className="small text-muted mb-0">&copy; 2026. Built with React & Bootstrap.</p>
       </div>
     </footer>
   );

@@ -1,14 +1,10 @@
-import React from 'react';
-
-const CardComponent = ({ title, content, icon, children, className = '' }) => {
+function CardComponent({ title, children }) {
   return (
-    <div className={`card ${className}`}>
-      {icon && <div className="card-icon">{icon}</div>}
-      {title && <h3 className="card-title">{title}</h3>}
-      {content && <p className="card-content">{content}</p>}
+    <div className="card shadow p-4 mb-4 h-100">
+      {title && <h5 className="fw-bold mb-2">{title}</h5>}
       {children}
     </div>
   );
-};
+}
 
 export default CardComponent;
