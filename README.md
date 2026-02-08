@@ -1,145 +1,35 @@
-# Gautam Sharma's Portfolio Website
+# Experiment 3: React Portfolio with Routing
 
-A professional, responsive portfolio website showcasing my projects, skills, and achievements in Computer Science, AI, and Machine Learning.
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
-## 🚀 Features
+## 🔗 Live Demo
+**[View Live Project on Vercel](https://gautam-portfolio-iota.vercel.app)**
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional interface with gradient themes
-- **Smooth Navigation**: Smooth scrolling between sections
-- **Project Showcase**: Detailed project descriptions with technologies used
-- **Skills Section**: Organized by categories (Languages, Data Science, Tools, Soft Skills)
-- **Contact Information**: Easy access to email, phone, and social links
-- **Achievements**: Highlights of notable accomplishments
+## 📌 Overview
+This project is **Experiment 3** for the Full Stack Development curriculum. It extends the previous React portfolio (Exp 2) by implementing **Client-Side Routing** and a professional **Bootstrap UI**.
 
-## 📋 Sections
+The application is a Single Page Application (SPA) that allows users to navigate between the **Home** (Profile/Bio) and **Projects** pages without a page reload.
 
-1. **Hero Section**: Introduction and call-to-action buttons
-2. **About**: Brief bio and education history
-3. **Skills**: Programming languages, Data Science tools, and soft skills
-4. **Projects**: Detailed showcase of 3 major projects
-5. **Achievements**: Notable accomplishments and recognitions
-6. **Contact Footer**: Social links and certifications
+## 🚀 Key Features
+- **React Router v6:** Implemented `BrowserRouter`, `Routes`, and `Route` for seamless navigation.
+- **Bootstrap 5:** Fully responsive grid layout (`Container`, `Row`, `Col`) and components (`Card`, `Navbar`).
+- **Dynamic Routing:** Active link highlighting in the Navigation Bar.
+- **Component Architecture:** Modularized code with separate `pages/` and `components/` directories.
 
 ## 🛠️ Tech Stack
+- **Frontend:** React.js (Vite)
+- **Styling:** Bootstrap 5.3
+- **Routing:** React Router DOM
+- **Deployment:** Vercel
 
-- **React 18**: Frontend framework
-- **Vite**: Build tool and dev server
-- **CSS3**: Styling with flexbox and grid layouts
-- **JavaScript**: Interactivity and smooth scrolling
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── HeroSection.jsx
-│   │   └── CardComponent.jsx
-│   ├── pages/
-│   │   └── Home.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
-## 🎨 Design Highlights
-
-- **Color Scheme**: Purple gradient (#667eea to #764ba2)
-- **Typography**: Clean, readable fonts with proper hierarchy
-- **Spacing**: Well-organized whitespace for visual clarity
-- **Animations**: Smooth hover effects and transitions
-- **Mobile Responsive**: Mobile-first design approach
-
-## 📱 Responsive Breakpoints
-
-- Desktop: 1200px+
-- Tablet: 768px - 1199px
-- Mobile: Below 768px
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-1. Navigate to the project directory:
+## 📂 Project Structure
 ```bash
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and visit `http://localhost:3000`
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-This creates an optimized production build in the `dist` folder.
-
-## 📧 Contact
-
-- **Email**: gaut21am@gmail.com
-- **Phone**: +91-9146047816
-- **LinkedIn**: linkedin.com/in/gautam-sharma-al
-- **GitHub**: github.com/dev-gautam21
-
-## 🎓 Education
-
-- **Bachelor of Engineering** in Computer Science and Engineering
-  - Chandigarh University, Punjab
-  - CGPA: 7.9
-
-## ✨ Projects
-
-### E-commerce Sales Dashboard Tools
-- Developed dynamic Power BI dashboard for e-commerce analytics
-- Technologies: Power BI, Power Query, Microsoft Excel
-
-### AI-Assisted Medical Triage System
-- Full-stack medical triage system with ML models
-- Technologies: React.js, Node.js, Python, Scikit-learn
-
-### Smart Parking Availability System
-- Real-time parking system with AI insights
-- Technologies: React 19, TypeScript, Google Gemini API, Tailwind CSS
-
-## 🏆 Achievements
-
-- State-level Basketball Player (selected for National-level team)
-- 3rd place in AI WARS Hackathon
-- 97.09 percentile in JEE Mains
-- 9th ranked in Coding Ninjas Scholarship Test
-
-## 🎖️ Certifications
-
-- Microsoft Azure AI Fundamentals
-- Introduction to Machine Learning from Duke University
-- Structured Query Language from the University of Colorado Boulder
-
-## 📄 License
-
-This project is personal and not licensed for commercial use.
-
----
-
-**Last Updated**: February 2026
+src/
+├── assets/         # Static assets (images)
+├── components/     # Reusable UI (Navbar.jsx, Footer.jsx)
+├── pages/          # Page Views (Home.jsx, Projects.jsx)
+├── App.jsx         # Main Routing Setup
+├── main.jsx        # Entry point & Bootstrap Import
+└── index.css       # Global Styles
