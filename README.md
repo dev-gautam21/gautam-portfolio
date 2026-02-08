@@ -5,7 +5,7 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## 🔗 Live Demo
-**[View Live Project on Vercel](https://gautam-portfolio-iota.vercel.app)**
+**[View Live Project on Vercel](https://gautam-portfolio-new.vercel.app/)**
 
 ## 📌 Overview
 This project is **Experiment 3** for the Full Stack Development curriculum. It extends the previous React portfolio (Exp 2) by implementing **Client-Side Routing** and a professional **Bootstrap UI**.
@@ -33,3 +33,4 @@ src/
 ├── App.jsx         # Main Routing Setup
 ├── main.jsx        # Entry point & Bootstrap Import
 └── index.css       # Global Styles
+
